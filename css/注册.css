@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+    padding:0 ;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#myTabs li{
+    margin: 0 10px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+
+    background: #e7e7e7;
+    width: 100%;
+}
+.footer_left{
+    margin-left: 400px;
+    width: 30%;
+    color: #888;
+    font-size: 8px;
+    float: left;
+}
+.footer_right{
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 400px;
+}

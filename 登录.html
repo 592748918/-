@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=,maximum-scale=1">
+    <!--
+    解决兼容性问题
+    -->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chorme=1">
+    <meta name="renderer" content="webkit">
+    <!--
+    搜索引擎
+    -->
+    <meta name="author" content="jerehedu">
+    <meta name="keywords" content="bootstrap,css,html">
+    <meta name="description" content="jerehedu">
+
+    <title>登录--盛大通行证</title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css"/>
+
+
+</head>
+<body>
+<div style="width: 500px;margin: auto auto">
+    <div class="text-center" style="margin-top: 70px">
+        <a href="首页.html"><img src="img/logo.png" alt=""/> </a>
+        <h3>一个账号，尽情玩转<strong>盛大游戏</strong></h3>
+    </div>
+    <div>
+        <ul id="myTabs" class="nav nav-tabs nav-justified" role="tablist" style="width: 330px;margin: 0 auto">
+            <li class="active"><a data-toggle="tab" href="#tab1">密码登录</a></li>
+            <li><a data-toggle="tab" href="#tab2">一键登录</a></li>
+            <li><a data-toggle="tab" href="#tab3"> 二维码 </a></li>
+        </ul>
+        <div class="tab-content"  >
+            <div role="tabpanel" class="tab-pane fade in active" id="tab1" aria-labelledby="home-tab">
+                <div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <form class="form-horizontal" action="#" method="get">
+                                <div class="form-group has-feedback" style="margin-top: 50px">
+
+                                    <div>
+                                        <input type="email" class="form-control " id="email"
+                                               placeholder="手机/邮箱/个性账号" required/>
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-feedback" style="margin-top: 50px">
+
+                                    <div >
+                                        <input type="password" class="form-control" id="password"
+                                               placeholder="静态密码/动态密码" required/>
+                                        <span class=""></span>
+                                    </div>
+                                </div>
+
+                                <!--btn-->
+                                <div class="form-group has-feedback" style="margin-top: 50px">
+
+                                    <div>
+                                        <p>
+                                            <button type="reset" class="btn btn-danger btn-block" id="btnSubmit">登录</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: 10px">
+
+                                    <div >
+                                        <p class="text-center ">
+                                            <a href="#" class="text-danger">无法登陆？</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: -10px">
+
+                                    <div  style="border: 1px solid #c7c7c7;width: 100%;height: 40px;">
+                                        <p class="text-center " style="line-height: 40px">
+                                            没有账号
+                                            <a href="#"  class="text-danger">立即注册</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+                                <!--
+                                    ok: glyphicon glyphicon-ok form-control-feedback
+                                    warning: glyphicon glyphicon-warning-sign form-control-feedback
+                                    error: glyphicon glyphicon-remove form-control-feedback
+                                -->
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="home-tab">
+                <div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <form class="form-horizontal" action="#" method="get">
+                                <div class="form-group has-feedback" style="margin-top: 50px">
+                                    <div class=" text-center" >
+                                        <img src="img/一键登录.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: 50px">
+                                    <div >
+                                        <input type="password" class="form-control"
+                                               placeholder="绑定的手机的账号/手机账号" required/>
+                                        <span class=""></span>
+
+                                    </div>
+                                </div>
+                                <!--btn-->
+                                <div class="form-group has-feedback" style="margin-top: 60px">
+                                    <div>
+                                        <p>
+                                            <button type="reset" class="btn btn-danger btn-block">手机一键登录</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: 10px">
+
+                                    <div >
+                                        <p class="text-center ">
+                                            <a href="#" class="text-danger">无法登陆？</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: -10px">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4" style="border: 1px solid #c7c7c7;width: 100%;height: 40px;">
+                                        <p class="text-center " style="line-height: 40px">
+                                            没有账号
+                                            <a href="#"  class="text-danger">立即注册</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="home-tab">
+                <div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <form class="form-horizontal" action="#" method="get">
+                                <div class="form-group has-feedback" style="margin-top: 10px">
+
+                                    <div class=" text-center" style="height: 30px">
+                                        <p style="float: left;line-height: 30px">使用 <a href="#" style="font-weight: bold;color: red"> 极管家</a>扫描二维码安全登录</p>
+                                        <a href="#" style="border: 1px solid #c7c7c7;color:#221e1f;padding: 4px 10px;float: right">安装</a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group has-feedback" style="margin-top: 40px">
+
+                                    <div class=" text-center">
+                                        <img src="img/二维码.png" alt=""/>
+
+                                    </div>
+                                </div>
+
+                                <!--btn-->
+
+                                <div class="form-group has-feedback" style="margin-top: 10px">
+
+                                    <div >
+                                        <p class="text-center ">
+                                            <a href="#" class="text-danger">无法登陆？</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback" style="margin-top: -10px">
+
+                                    <div style="border: 1px solid #c7c7c7;width: 100%;height: 40px;">
+                                        <p class="text-center " style="line-height: 40px">
+                                            没有账号
+                                            <a href="#"  class="text-danger">立即注册</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="footer ">
+    <div class="footer1" >
+        <div class="footer_left ">
+            <span>互联网出版许可证 ： 新出网证（沪）字026号</span>
+            <span style="margin-left: 50px">增值电信业务经营许可证：沪 B2-20100008</span>
+            <br/>
+            <span>网络文化经营许可证：沪网文[2014]0749-179号</span>
+            <span style="margin-left: 38px">沪ICP备14052292号-2</span>
+            <br/>
+            <span>上海数龙科技有限公司 地址：上海市浦东新区张江碧波路690号1号楼 电话：021-50504740</span>
+            <br/>
+            <span style="color: #ffb161">适龄提示：适合12岁以上使用</span>
+        </div>
+        <div class="footer_right">
+            <ul>
+                <li><img src="img/cy.png" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer2" >
+        <p>&curren;王延京制作&curren;</p>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="bootstap/js/jquery-3.1.0.min%20(1).js"></script>
+<script type="text/javascript" src="bootstap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/登录.css"/>
+
+<script>
+
+    //获取email值
+    function checkUsername(){
+        var username = $('#email');
+
+        if(username.val() == ""){
+            //为了防止添加样式受影响，先清除所有的样式,然后添加样式
+            username.parent().parent()
+                    .removeClass().addClass("form-group has-error has-feedback");
+            username.next()
+                    .removeClass().addClass("glyphicon glyphicon-remove form-control-feedback");
+        }else{
+            username.parent().parent()
+                    .removeClass().addClass("form-group has-success has-feedback");
+            username.next()
+                    .removeClass().addClass("glyphicon glyphicon-ok form-control-feedback")
+        }
+    }
+    $(function(){
+        $('#btnSubmit').click(function(){
+//
+            checkUsername();
+        });
+    });
+</script>
+<style>
+    @media only screen and (min-width:1200px){
+        .footer2{
+            display: none;
+        }
+        .footer1{
+            display: block;
+        }
+
+    }
+    @media only screen and (max-width:1200px){
+        .footer1{
+            display: none;
+        }
+        .footer2{
+            display: block;
+        }
+
+        .top_right p{
+            margin: 0 auto;
+        }
+    }
+</style>
+</body>
+</html>

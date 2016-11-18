@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=,maximum-scale=1">
+    <!--
+    解决兼容性问题
+    -->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chorme=1">
+    <meta name="renderer" content="webkit">
+    <!--
+    搜索引擎
+    -->
+    <meta name="author" content="jerehedu">
+    <meta name="keywords" content="bootstrap,css,html">
+    <meta name="description" content="jerehedu">
+
+    <title>盛大游戏</title>
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css"/>
+
+
+
+
+</head>
+<body style="overflow:scroll;overflow-y:hidden">
+<div class="head">
+    <div class="nav container">
+
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="javascript:void (0)"><img src="img/logo@1x.png" alt="logo"/></a>
+                    </div>
+                    <!--
+                        折叠菜单需要通过data-target去定位到指定菜单
+                    -->
+                    <button data-target="#subNav" data-toggle="collapse" class="navbar-toggle" id="con">
+
+                    </button>
+                </div>
+
+                <!--
+                    collapse:折叠
+                -->
+                <div  id="subNav"  class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav " id="nav">
+                        <li><a href="#" style="color: red">首页</a></li>
+                        <li><a href="我的通行证.html">我的通行证</a></li>
+                        <li><a href="充值.html">充值</a></li>
+                        <li><a href="#">彩虹客服</a></li>
+                        <li class="lii">
+                            <a href="登录.html">登录</a>
+                            <a href="#">注册</a>
+                        </li>
+                    </ul>
+                    <!--<div class="pull-right" id="denglu">
+                        <a href="登录.html">登录</a>
+                        <a href="#">注册</a>
+                    </div>-->
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="box">
+    <img src="img/mian1.jpg" alt="" class="img"/>
+    <img src="img/main2.jpg" alt="" class="img"/>
+    <img src="img/main3.jpg" alt="" class="img"/>
+    <img src="img/main4.JPG" alt="" class="img"/>
+    <div class="box_menu">
+        <ul class="tabtitle">
+            <li class="tabhover li" id="daxing">
+                <a href="javascript:void (0)"><h3>大型</h3></a>
+                <span class="arrow1"></span>
+                <div class="box_menu1 boxcom" style="display: none " >
+                    <div class="box_menu1_top">
+                        <ul>
+                            <li class="li2"><img src="img/永恒之塔.jpg" alt=""/></li>
+                            <li class="li2"><img src="img/传奇世界.JPG" alt=""/></li>
+                            <li class="li2"><img src="img/龙之谷.JPG" alt=""/></li>
+                        </ul>
+                    </div>
+                    <div class="box_menu1_bottom">
+                        <ul id="game1"></ul>
+                        <ul id="game2"></ul>
+                        <ul id="game3"></ul>
+                    </div>
+                </div>
+            </li>
+            <li class="taba li" id="shouyou">
+                <a href="javascript:void (0)"  ><h3>手游</h3></a>
+                <span class="arrow2"></span>
+                <div class="box_menu2  boxcom" style="display: none" >
+                    <div class="box_menu2_top" >
+                        <ul>
+                            <li class="li2"><img src="img/血族.JPG" alt=""/></li>
+                            <li class="li2"><img src="img/传奇世界.JPG" alt=""/></li>
+
+                        </ul>
+                    </div>
+                    <div class="box_menu2_bottom">
+                        <ul id="game4"></ul>
+                        <ul id="game5"></ul>
+                    </div>
+                </div>
+            </li>
+            <li class="taba li" id="xiuxian">
+                <a href="javascript:void (0)" ><h3>休闲</h3></a>
+                <span class="arrow3"></span>
+                <div class="box_menu3  boxcom" style="display: none" >
+                    <div class="box_menu3_top" >
+                        <ul>
+                            <li class="li2"><img src="img/泡泡堂.JPG" alt=""/></li>
+                        </ul>
+                    </div>
+                    <div class="box_menu3_bottom">
+                        <ul id="game6"></ul>
+
+                    </div>
+                </div>
+            </li>
+            <li class="taba li" id="wangye">
+                <a href="javascript:void (0)" ><h3>网页</h3></a>
+                <span class="arrow4"></span>
+                <div class="box_menu4  boxcom"  style="display: none;" >
+
+                    <div class="box_menu4_bottom">
+                        <ul id="game7"></ul>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer ">
+    <div class="footer1" >
+        <div class="footer_left ">
+            <span>互联网出版许可证 ： 新出网证（沪）字026号</span>
+            <span style="margin-left: 50px">增值电信业务经营许可证：沪 B2-20100008</span>
+            <br/>
+            <span>网络文化经营许可证：沪网文[2014]0749-179号</span>
+            <span style="margin-left: 38px">沪ICP备14052292号-2</span>
+            <br/>
+            <span>上海数龙科技有限公司 地址：上海市浦东新区张江碧波路690号1号楼 电话：021-50504740</span>
+            <br/>
+            <span style="color: #ffb161">适龄提示：适合12岁以上使用</span>
+        </div>
+        <div class="footer_right">
+            <ul>
+                <li><img src="img/cy.png" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer2" >
+        <p>&curren;王延京制作&curren;</p>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="bootstap/js/jquery-3.1.0.min%20(1).js"></script>
+<script type="text/javascript" src="bootstap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/盛大.js"></script>
+<link rel="stylesheet" href="css/盛大.css"/>
+<script>
+    var nowFrame = 0;
+    var lis = $('.box .img');
+
+    lis[0].style.display='block';
+    lis[1].style.display='none';
+    lis[2].style.display='none';
+    lis[3].style.display='none';
+    setInterval(function(){
+        nowFrame++;
+        if(nowFrame>=lis.length){
+            nowFrame=0;
+        }
+
+        for(var i=0;i<lis.length;i++){
+            if(i==nowFrame){
+                lis[i].style.display='block';
+            }else{
+                lis[i].style.display='none';
+            }
+        }
+
+    },3000);
+$(function(){
+    $('#daxing').hover(function(){
+        $('.box_menu1').toggle();
+    });
+    $('#shouyou').hover(function(){
+        $('.box_menu2').toggle();
+    });
+    $('#xiuxian').hover(function(){
+        $('.box_menu3').toggle();
+    });
+    $('#wangye').hover(function(){
+        $('.box_menu4').toggle();
+    });
+    $(function(){
+        $('#con').click(function(){
+            $('.box').toggle();
+        })
+
+    })
+
+
+
+})
+
+
+
+</script>
+<style>
+    @media only screen and (min-width:970px){
+        .footer2{
+            display: none;
+        }
+        .footer1{
+            display: block;
+        }
+
+    }
+    @media only screen and (max-width:970px){
+        .footer1{
+            display: none;
+        }
+        .footer2{
+            display: block;
+        }
+    }
+</style>
+</body>
+</html>

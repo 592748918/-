@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=,maximum-scale=1">
+    <!--
+    解决兼容性问题
+    -->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chorme=1">
+    <meta name="renderer" content="webkit">
+    <!--
+    搜索引擎
+    -->
+    <meta name="author" content="jerehedu">
+    <meta name="keywords" content="bootstrap,css,html">
+    <meta name="description" content="jerehedu">
+
+    <title>盛大在线——盛大游戏娱乐平台</title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css"/>
+
+
+</head>
+<body>
+<div class="head">
+    <div class="nav container">
+
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <a href="javascript:void (0)"><img src="img/logo@1x.png" alt="logo"/></a>
+                    </div>
+                    <!--
+                        折叠菜单需要通过data-target去定位到指定菜单
+                    -->
+                    <button data-target="#subNav" data-toggle="collapse" class="navbar-toggle" id="con">
+
+                    </button>
+                </div>
+
+                <!--
+                    collapse:折叠
+                -->
+                <div  id="subNav"  class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav " id="nav">
+                        <li><a href="首页.html" >首页</a></li>
+                        <li><a href="#" style="color: #c9242b;">我的通行证</a></li>
+                        <li><a href="充值.html">充值</a></li>
+                        <li><a href="#">彩虹客服</a></li>
+                        <li class="lii">
+                            <a href="登录.html">登录</a>
+                            <a href="#">注册</a>
+                        </li>
+                    </ul>
+                    <!--<div class="pull-right" id="denglu">
+                        <a href="登录.html">登录</a>
+                        <a href="#">注册</a>
+                    </div>-->
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="main container">
+    <div class="top">
+        <div class="top_left">
+            <p>我的通行证</p>
+        </div>
+        <div class="top_right top_right1" >
+            <p>账号信息</p>
+        </div>
+        <div class="top_right top_right2" style="display: none">
+            <p>账号体检</p>
+        </div>
+        <div class="top_right top_right3" style="display: none">
+            <p>安全服务</p>
+        </div>
+        <div class="top_right top_right4" style="display: none">
+            <p>安全产品</p>
+        </div>
+    </div>
+    <div class="big">
+        <div class="big_left" id="abc">
+            <div class="panel-group" id="tongxing">
+
+                <div class="panel red" id="active" >
+                        <div class="panel-heading">
+                            <a href="#xinxi" data-parent="#tongxing" data-toggle="collapse"><h4>账号信息</h4></a>
+                        </div>
+                        <div class="panel-collapse collapse" id="xinxi"></div>
+                </div>
+                <div class="panel " style="padding-left: 10px">
+                        <div class="panel-heading">
+                            <a href="#safe" data-parent="#tongxing" data-toggle="collapse"><h4>账号安全<span class="caret"></span></h4></a>
+                        </div>
+                        <div id="safe" class="panel-collapse collapse">
+                            <ul style="margin-left: 40px" >
+                                <li ><a id="tiyan">账号体检</a></li>
+                                <li ><a id="fuwu">安全服务</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="panel red" style="padding-left: 10px">
+                        <div class="panel-heading">
+                            <a href="#chanpin" data-parent="#tongxing" data-toggle="collapse" id="anquan"><h4>安全产品</h4></a>
+                        </div>
+                        <div class="panel-collapse collapse" id="chanpin"></div>
+                </div>
+            </div>
+        </div>
+        <div class="big_right big_right1" >
+            <div class="big_right_box">
+                <p>请登录账号获取以下服务</p>
+                <div class="big_right_box_btn">
+                    <a href="登录.html"><button type="button" class="btn btn-danger" >登录</button></a>
+                    <button type="button" class="btn">注册</button>
+                </div>
+            </div>
+            <div class="info_box">
+                <ul>
+                    <li>
+                        <div class="icon1 iconcom"></div>
+                        <div class="info">
+                            <h3>查看账号资料</h3>
+                            <p>查看账号资料：账号名、点券余额、安全等级、别名、会员等级</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon2 iconcom"></div>
+                        <div class="info">
+                            <h3>绑定安全手机</h3>
+                            <p>加固账号安全，快速找回密码，特有功能服务</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon3 iconcom"></div>
+                        <div class="info">
+                            <h3>填写注册资料</h3>
+                            <p>注册资料是密码、装备找回、绑定解绑手机、密保、安全卡等服务的重要凭证</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon4 iconcom"></div>
+                        <div class="info">
+                            <h3>认证邮箱</h3>
+                            <p>可用于密码找回，或接受各类补办，资料查询信息</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon5 iconcom"></div>
+                        <div class="info">
+                            <h3>实名认证</h3>
+                            <p>根据国家有关规定，您在进入游戏时需要进行实名认证以及防沉迷验证</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="big_right big_right2" style="display: none">
+            <div class="big_right_box">
+                <p>请登录账号获取以下服务</p>
+                <div class="big_right_box_btn">
+                    <a href="登录.html"><button type="button" class="btn btn-danger" >登录</button></a>
+                    <button type="button" class="btn">注册</button>
+                </div>
+            </div>
+            <div class="info_box">
+                <ul>
+                    <li>
+                        <div class="icon6 iconcom"></div>
+                        <div class="info">
+                            <h3>完善安全资料</h3>
+                            <p>完善账号资料（绑定手机、邮箱，填写注册资料，进行实名认证）会让账号更安全。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon7 iconcom"></div>
+                        <div class="info">
+                            <h3>设置密码强度</h3>
+                            <p>不同强度的密码会影响账号的安全评分，建议设置强密码。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon8 iconcom"></div>
+                        <div class="info">
+                            <h3>消费保护</h3>
+                            <p>设置消费保护，为账号点券加一把锁，账号更安全。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon9 iconcom"></div>
+                        <div class="info">
+                            <h3>异地登录</h3>
+                            <p>设置登录地保护，为账号登录加一把锁，账号更安全。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon10 iconcom"></div>
+                        <div class="info">
+                            <h3>附加保护</h3>
+                            <p>绑定安全产品（极管家、密宝、安全卡）让账号更安全</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="big_right big_right3" style="display: none">
+            <div class="big_right31">
+                <div class="big_right31_pic"></div>
+                <h3>基础安全</h3>
+            </div>
+            <div class="big_right32">
+                <div class="big_right321">
+                    <div class="big_right321pic"></div>
+                    <h5>认证手机</h5>
+                    <ul class="big_right3211">
+                        <li><a href="#">绑定手机</a></li>
+                        <li><a href="#">更换手机</a></li>
+                        <li><a href="#">解绑手机</a></li>
+                    </ul>
+                </div>
+                <div class="big_right322">
+                    <div class="big_right322pic"></div>
+                    <h5>认证邮箱</h5>
+                    <ul class="big_right3221">
+                        <li><a href="#">绑定邮箱</a></li>
+                        <li><a href="#">更换邮箱</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="big_right33">
+                <div class="big_right33_pic"></div>
+                <h3>高级安全（三选一）</h3>
+            </div>
+            <div class="big_right34">
+                <div class="big_right341">
+                    <div class="big_right341pic"></div>
+                    <h5>极管家</h5>
+                    <ul class="big_right3411">
+                        <li><a href="#">点券锁</a></li>
+                        <li><a href="#">静态密码锁</a></li>
+                        <li><a href="#">登陆地保护</a></li>
+                    </ul>
+                    <ul  class="big_right3412">
+                        <li><a href="#">登陆锁</a></li>
+                        <li><a href="#">安全开关</a></li>
+                        <li><a href="#">消费保护</a></li>
+                    </ul>
+                </div>
+                <div class="big_right342">
+                    <div class="big_right342pic"></div>
+                    <h5>密保</h5>
+                    <ul class="big_right3421">
+                        <li><a href="#">解绑密保</a></li>
+                        <li><a href="#">挂失密保</a></li>
+                        <li><a href="#">校准时间</a></li>
+                    </ul>
+                    <ul class="big_right3422">
+                        <li><a href="#">绑定密保</a></li>
+                        <li><a href="#">更换密保</a></li>
+                        <li><a href="#">查询密保序列号</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div  class="big_right35">
+                <div class="big_right351">
+                    <div class="big_right351pic"></div>
+                    <h5>安全卡</h5>
+                    <ul class="big_right3511">
+                        <li><a href="#">解绑安全卡</a></li>
+                        <li><a href="#">绑定安全卡</a></li>
+                        <li><a href="#">更换安全卡</a></li>
+                    </ul>
+                    <ul class="big_right3512">
+                        <li><a href="#">找回安全卡</a></li>
+                    </ul>
+                </div>
+                <div class="big_right352"></div>
+            </div>
+            <br/>
+            <div class="big_right36">
+                <div class="big_right36_pic"></div>
+                <h3>安全服务</h3>
+            </div>
+            <div class="big_right37">
+                <div class="big_right371">
+                    <div class="big_right371pic"></div>
+                    <h5>账号修复</h5>
+                    <ul class="big_right3711">
+                        <li><a href="#">找回密码</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="#">自定义找回密码</a></li>
+                    </ul>
+                    <ul  class="big_right3712">
+                        <li><a href="#">找回通行证</a></li>
+                        <li><a href="#">装备消失</a></li>
+                        <li><a href="#">消费保护</a></li>
+                    </ul>
+                </div>
+                <div class="big_right372">
+                    <div class="big_right372pic"></div>
+                    <h5>密保</h5>
+                    <ul class="big_right3721">
+                        <li><a href="#">解绑安全产品</a></li>
+                        <li><a href="#">解绑异议申请</a></li>
+                        <li><a href="#">查询申诉结果</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="big_right big_right4" style="display: none">
+            <div class="big_right4_bac">
+                <div class="img"></div>
+                <div class="txt">
+                    <h5>极管家</h5>
+                    <p>盛大游戏开发的一款移动端APP，</p>
+                    <p>旨在帮助玩家更安全、更超值、更快乐的体验游戏</p>
+                    <a href="#"><button type="button" class="btn btn-danger">立即下载</button></a>
+                </div>
+            </div>
+            <div class="big_right41"></div>
+            <div class="big_right42"></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer ">
+    <div class="footer1" >
+        <div class="footer_left ">
+            <span>互联网出版许可证 ： 新出网证（沪）字026号</span>
+            <span style="margin-left: 50px">增值电信业务经营许可证：沪 B2-20100008</span>
+            <br/>
+            <span>网络文化经营许可证：沪网文[2014]0749-179号</span>
+            <span style="margin-left: 38px">沪ICP备14052292号-2</span>
+            <br/>
+            <span>上海数龙科技有限公司 地址：上海市浦东新区张江碧波路690号1号楼 电话：021-50504740</span>
+            <br/>
+            <span style="color: #ffb161">适龄提示：适合12岁以上使用</span>
+        </div>
+        <div class="footer_right">
+            <ul>
+                <li><img src="img/cy.png" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer2" >
+        <p>&curren;王延京制作&curren;</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="bootstap/js/jquery-3.1.0.min%20(1).js"></script>
+<script type="text/javascript" src="bootstap/js/bootstrap.min.js"></script>
+<script src="js/jquery.fly.min.js"></script>
+<script src="js/requestAnimationFrame.js"></script>
+<link rel="stylesheet" href="css/我的通行证.css"/>
+<script>
+
+    $(function(){
+        $('#active').css({"border-left":"5px solid red","padding-left":"5px ","color":"red"});
+        $('#abc .red').click(function(){
+            $(this).css({"border-left":"5px solid red","padding-left":"5px","color":"red"})
+                    .siblings().css({"border-left":"none","padding-left":"10px"});
+            $('#safe li').css({"border-left":"none","padding-left":"10px"});
+
+
+        })
+        $('#safe li').click(function(){
+            $(this).css({"border-left":"5px solid red","padding-left":"5px","color":"red"})
+                    .siblings().css({"border-left":"none","padding-left":"10px"});
+            $('#abc .red').css({"border-left":"none","padding-left":"10px"});
+        })
+    })
+    $(function(){
+
+        /*console.info($('#abc .red,#safe li'))
+        $('#abc').find('li').click(function(){
+            var s = $(this).index();
+            $('.big_right').eq(s).css('display','block').siblings().css('display','none');
+            alert(s);
+        })*/
+        $('#active').click(function(){
+            $('.big_right1').css('display','block');
+            $('.big_right2').css('display','none');
+            $('.big_right3').css('display','none');
+            $('.big_right4').css('display','none');
+            $('.top_right1').css('display','block');
+            $('.top_right2').css('display','none');
+            $('.top_right3').css('display','none');
+            $('.top_right4').css('display','none');
+        })
+        $('#tiyan').click(function(){
+            $('.big_right1').css('display','none');
+            $('.big_right2').css('display','block');
+            $('.big_right3').css('display','none');
+            $('.big_right4').css('display','none');
+            $('.top_right1').css('display','none');
+            $('.top_right2').css('display','block');
+            $('.top_right3').css('display','none');
+            $('.top_right4').css('display','none');
+        })
+        $('#fuwu').click(function(){
+            $('.big_right1').css('display','none');
+            $('.big_right2').css('display','none');
+            $('.big_right3').css('display','block');
+            $('.big_right4').css('display','none');
+            $('.top_right1').css('display','none');
+            $('.top_right2').css('display','none');
+            $('.top_right3').css('display','block');
+            $('.top_right4').css('display','none');
+        })
+        $('#anquan').click(function(){
+            $('.big_right1').css('display','none');
+            $('.big_right2').css('display','none');
+            $('.big_right3').css('display','none');
+            $('.big_right4').css('display','block');
+            $('.top_right1').css('display','none');
+            $('.top_right2').css('display','none');
+            $('.top_right3').css('display','none');
+            $('.top_right4').css('display','block');
+        })
+    })
+</script>
+
+</body>
+</html>

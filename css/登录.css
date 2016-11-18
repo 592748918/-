@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*{
+    padding:0 ;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#myTabs li{
+    margin: 0 10px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+
+    background: #e7e7e7;
+    width: 100%;
+}
+.footer1{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer_left{
+    width: 70%;
+    color: #888;
+    font-size: 8px;
+    float: left;
+}
+.footer_right{
+    width: 30%;
+    float: right;
+    margin-top: 20px;
+
+}
+.footer2{
+    width: 130px;
+    margin: 0 auto;
+    display: none;
+
+}
+.footer2 p {
+    height: 50px;
+    line-height: 50px;
+    color: #888;
+    font-size: 8px;
+}
